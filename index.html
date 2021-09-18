@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+	<head>
+		<title>
+			[Thanapol Siriyuvasak ~ DIG 4713] Game Design 4: Custom Game
+		</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" type="text/css" href="SiriyuvasakThanapolWebsiteCSS.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+	<body>
+		<div class="row">
+			
+		<!-- Column #1 -->
+			<div class="column-1">
+				<div class="division-left-1">
+					<img src="icon.jpg" class="image-profile">
+					<h1><u>TRIVIABACUS</u></h1>
+					<h2>A Thai trivia-based number elimination<br/>board game by Thanapol Siriyuvasak.</h2>
+				</div>
+				<div class="division-left-2">
+					<h2 style="text-align:left; margin-left:10px"><u>Jump To... :</u></h2>
+					<p style="text-align:left; margin-left:10px"><br/>
+						<a href="#shot1"><i class="material-icons">&#xe3f4;</i> <b>Rules...</b></a>
+					</p>
+					<p style="text-align:left; margin-left:10px">
+						<a href="#shot2"><i class="material-icons">&#xe3f4;</i> <b>MDA Analysis...</b></a>
+					</p>
+					<p style="text-align:left; margin-left:10px">
+						<a href="#shot3"><i class="material-icons">&#xe3f4;</i> <b>Art Style Guide...</b></a>
+					</p>
+					<p style="text-align:left; margin-left:10px">
+						<a href="#shot4"><i class="material-icons">&#xe3f4;</i> <b>Design Document...</b></a>
+					</p>
+					<p style="text-align:left; margin-left:10px">
+						<a href="#shot5"><i class="material-icons">&#xe3f4;</i> <b>Demonstration Video...</b></a>
+					</p>
+				</div>
+			</div>
+			
+		<!-- Column #2 -->
+			<div class="column-2">
+				<div class="division-middle">
+					<a id="shot1"><h1 style="text-align:left; margin-left:20px"><u>Rules:</u></h1></a>
+					<p style="text-indent:20px; text-align:left; margin-left:20px; margin-right:20px">
+						Players: 2/4. Calculator required for keeping track of the points.
+					</p>
+					<p style="text-indent:20px; text-align:left; margin-left:20px; margin-right:20px">
+						All players start at 10,000 life points. Move through the board by rolling 2 dices.
+					</p>
+					<p style="text-indent:20px; text-align:left; margin-left:20px; margin-right:20px">
+						Land on the various colored tiles to draw a card associated with the tiles' colors. Land on Send to HELL & the player will be sent to HELL space, where they can choose to stay there & lose 500 life points
+						for every moving players' turns, OR get out of HELL by inserting themselves into other players' turns & disrupt the turn order at the cost of half of their points. For SAFE SPACE, passing through it will
+						give the player 1,000 points, while landing on it gives 2,000.
+					</p>
+					<p style="text-indent:20px; text-align:left; margin-left:20px; margin-right:20px">
+						To win, get 20,000 points & finish the lap (by either lands or passes through START), OR finish 3 laps before other players do so, OR be the last person standing.
+					</p>
+					<p style="text-indent:20px; text-align:left; margin-left:20px; margin-right:20px">
+						If a player's points are 0 or getting into the negatives, they will only be able to roll 1 dice at a time. Also, landing or passing through START will cause said player to be eliminated for the rest of the game.
+					</p>
+					<p style="text-indent:20px; text-align:left; margin-left:20px; margin-right:20px">
+						Detailed rule sheet can be found here in this PDF file: <a href="https://drive.google.com/file/d/18O_tpV2uFaQyUECuT52-kZSZVkKZF3R1/view">https://drive.google.com/file/d/18O_tpV2uFaQyUECuT52-kZSZVkKZF3R1/view</a>
+					</p>
+				</div>
+				<div class="division-middle">
+					<a id="shot2"><h1 style="text-align:left; margin-left:20px"><u>MDA Analysis:</u></h1></a>
+					<p style="text-indent:20px; text-align:left; margin-left:20px; margin-right:20px">
+						The mechanics of this board game, at its core, focuses on number calculation, where numbers fluctuate depending on various factors such as what cards are at play & what spaces the players passed or landed.
+						Numbers aside, there's also a condition where a player who managed to finish 3 laps first would win. This would involve lucky dice rolls that resulted in having said player moves many spaces while being able to avoid
+						tiles that would negatively affect them, both in movement & in points.
+					</p>
+					<p style="text-indent:20px; text-align:left; margin-left:20px; margin-right:20px">
+						To spice up that mechanics, the added dynamics include ability to screw up the turn order by being inside a jail space equivalent. Switching up the turn order may or may not give the losing player an advantage over the upcoming winner, 
+						but at least they will be able to interrupt other players indirectly as certain in-game cards are stated to be affected by players' turn orders. The tile space numbers are also reduced so that there's no empty spaces where nothing happens,
+						as well as to speed up the game's pace.
+					</p>
+					<p style="text-indent:20px; text-align:left; margin-left:20px; margin-right:20px">
+						As for the aesthetics, I want the board game to be an edutainment of sorts; the cards in the game include pictures & descriptions of interesting facts, myths, & trivias related to my home country Thailand & their cultures. This aesthetics is
+						chosen because Thai cultures are something worth preserving, yet people in the country keeps on incorporating modern western cultures while have their own traditions neglected. With this kind of aesthetics, I at least hope that 
+						people playing the board game will be interested in Thai cultures & some fun facts & trivias related to them.
+					</p>
+				</div>
+				<div class="division-middle">
+					<a id="shot3"><h1 style="text-align:left; margin-left:20px"><u>Art Style Guide:</u></h1></a>
+					<p style="text-indent:20px; text-align:left; margin-left:20px; margin-right:20px">
+						Art style guide & reference: <a href="https://drive.google.com/file/d/1KqBGfmb57j-p8N-Qf3TAi51agw2xpVao/view">https://drive.google.com/file/d/1KqBGfmb57j-p8N-Qf3TAi51agw2xpVao/view</a>
+					</p>
+				</div>
+				<div class="division-middle">
+					<a id="shot4"><h1 style="text-align:left; margin-left:20px"><u>Design Document:</u></h1></a>
+					<p style="text-indent:20px; text-align:left; margin-left:20px; margin-right:20px">
+						Detailed design document for the board game can be found here: <a href="https://drive.google.com/file/d/1mGHHLZm9RA-VLuMjj9RtB2vmFsOxoIvN/view">https://drive.google.com/file/d/1mGHHLZm9RA-VLuMjj9RtB2vmFsOxoIvN/view</a>
+					</p>
+				</div>
+				<div class="division-middle">
+					<a id="shot5"><h1 style="text-align:left; margin-left:20px"><u>Demonstration Video:</u></h1></a>
+					<div class="videoWrapper">
+						<iframe src="https://www.youtube.com/embed/AuN3kXPYR54" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="margin-left:20px"></iframe>
+					</div>
+				</div>
+			</div>
+			
+		</div> <!-- For class="row" -->
+	</body>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+</html>
